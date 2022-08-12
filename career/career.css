@@ -82,7 +82,7 @@ nav.logo{
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 5px 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px 5px black;
   }
   
   .slides{
