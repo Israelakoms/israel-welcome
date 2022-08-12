@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background-color: #f6f6f6;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+
+  nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex; 
+    align-items: center;
+    justify-content:space-between;
+   color: black;  
+
+  }
+  
+nav.logo{
+    width: 80px;
+  }
+
+  nav ul li{
+    list-style: none;
+     display: inline; 
+    margin-left: 40px;
+  }
+
+
+  a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  ul.topnav li:not(:nth-child(5)) :hover {
+    border:2px solid black;
+    background-color:transparent;
+    color: black;
+    border-radius: 20px;
+    padding: 14px 20px;
+  }
+
+
+  .topnav .dropdownicon {
+    display: none;
+  }
+
+  
+
+
+
+ 
+  .slider{
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 5px grey;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 900px;
+    height: 500px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #40D3DC;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: black;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: black;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: black;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: black;
+  }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+  
+@media screen  and (max-width: 800px) {
+ 
+ 
+    div.content h2{
+       width: 100%;
+       font-size: 90px;
+     }
+     
+     .slider {
+      position: relative;
+       width: 355px;
+       height: 200px;
+       align-items: center;
+}
+ .slides img{
+  max-width: 355px;
+  height: 200px;
+ }
+ }
+   /* mobile */
+   
+   @media screen and (max-width: 680px) {
+    
+     .back-video, .content{
+       opacity: 0.6;
+     }
+
+ 
+ 
+     .topnav a {
+       float: none;
+       width: 100%;
+     }
+    
+     ul.topnav li:not(:nth-child(1)) {
+         display:none;
+   }
+     ul.topnav li.dropdownicon {
+     display: block;
+     float: right;
+   }
+   
+   ul.topnav.responsive li.dropdownicon{
+     position: absolute;
+     top: 0;
+     right: 0;
+   }
+   
+   
+   
+   ul.topnav.responsive{
+     position: relative;
+   }
+   
+   ul.topnav.responsive li {
+     display: inline;
+     float: none;
+   }
+   
+   ul.topnav.responsive li a{
+     display: block;
+     text-align: left;
+   }
+   
+   }
