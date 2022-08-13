@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #40D3DC;
+    background-color: #0470bf;
   }
 
 
@@ -128,7 +128,7 @@ nav.logo{
   }
   
   .manual-btn:hover{
-    background: #40D3DC;
+    background: #0470bf;
   }
   
   #radio1:checked ~ .first{
@@ -222,6 +222,16 @@ nav.logo{
   max-width: 355px;
   height: 200px;
  }
+
+
+ .manual-btn{
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 2s;
+}
+
  }
    /* mobile */
    
