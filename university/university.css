@@ -116,13 +116,13 @@ nav.logo{
   }
   
   .manual-btn{
-    border: 2px solid black;
+    border: 2px solid white;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 2s;
+    transition: 1s;
   }
-  
+
   .manual-btn:not(:last-child){
     margin-right: 40px;
   }
