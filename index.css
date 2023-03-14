@@ -154,7 +154,7 @@ ul.topnav li:not(:nth-child(5)) :hover {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1600px) {
     div.content h2 {
         width: 100%;
         font-size: 90px;
